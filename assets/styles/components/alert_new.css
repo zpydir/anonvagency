@@ -1,0 +1,12 @@
+.alert_new{
+    color: var(--alert_new_color);
+    padding: 10px;
+    font-size: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: var(--alert_new_background);
+}

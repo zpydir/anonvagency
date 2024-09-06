@@ -1,0 +1,114 @@
+.header{
+    background-image: url('../../images/header_img.png');
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 77vh;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.header_content::before{
+    content: url('../../images/header_blur.png');
+    z-index: 0;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.header_info{
+    width: 500px;
+}
+
+.header_badge{
+    background: var(--badge_background);
+    border: 1px solid var(--badge_border);
+    color: var(--default);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 9px 20px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+.header_title{
+    font-family: "Syne", sans-serif;
+    font-weight: 600;
+    color: var(--default);
+    margin-bottom: 15px;
+}
+
+.header_title span{
+    color: var(--primary);
+}
+
+.header_description{
+    color: var(--subtitle);
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.header_info .button_section{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.header_info .button_section .button{
+    border-radius: 100px;
+    padding: 10px 30px;
+    font-size: 15px;
+    transition: .2s!important;
+    position: relative;
+    z-index: 2;
+}
+
+.header_info .button_section .button:hover{
+    transform: scale(1.05);
+}
+
+.button-primary{
+    background: var(--header_primary_button_background);
+    color: var(--header_primary_button_color);
+    font-weight: 500;
+}
+
+.button-secondary{
+    background: var(--header_secondary_button_background);
+    color: var(--default);
+    border: 1px solid var(--header_secondary_button_border);
+}
+
+.header_content_terms{
+    margin-top: -60px;
+    margin-bottom: -100px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header_info{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-height: 900px) {
+    .header_content{
+        height: auto;
+        padding: 180px 0 250px;
+    }
+}
+
+
+@media only screen and (max-height: 500px) {
+    .header_content{
+        height: auto;
+        padding: 180px 0 250px;
+    }
+}

@@ -1,0 +1,111 @@
+.about_us{
+    width: 100%;
+    position: relative;
+    padding: 50px 60px;
+    box-sizing: border-box;
+    color: #FFF;
+    background: linear-gradient(180deg, #0c0b0f 0%, 
+    rgb(0, 0, 0) 75%);
+    background-clip: padding-box;
+    border: solid 2px transparent;
+    border-radius: 1em;
+}
+
+.about_us_content{
+    position: relative;
+    z-index: 2;
+}
+
+.about_us::before{
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: calc(-1 * 1px);
+    border-radius: inherit;
+    background: linear-gradient(to bottom, #161616, #000000);
+}
+
+.about_us_icon{
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    max-width: 50px;
+    max-height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_us_card{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.about_us_info_main{
+    border-right: 1px solid #1B1B1C;
+    padding-right: 36px;
+    margin-bottom: 40px;
+}
+
+.about_us_title_main{
+    font-family: "Syne", sans-serif;
+    font-weight: 500;
+    color: var(--default);
+}
+
+.about_us_description_main span{
+    color: var(--subtitle);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.about_us_card{
+    margin-left: 40px;
+    width: 80%;
+}
+
+.about_us_card .about_us_info_title{
+    font-family: "Syne", sans-serif;
+    font-weight: 500;
+    color: var(--default);
+    font-size: 17px;
+}
+
+.about_us_card .about_us_info_description{
+    color: var(--subtitle);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .about_us{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 1%;
+        width: auto;
+        padding: 30px 30px;
+    }
+
+    .about_us_info_main{
+        border: none;
+    }
+
+    .about_us_card {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .about_us_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

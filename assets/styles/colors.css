@@ -1,0 +1,35 @@
+:root{
+    --background: #000000;
+    --subtitle: #756C89;
+
+    --default: #FFFFFF;
+    --primary: #B28FE8;
+    --secondary: #B28FE8;
+
+    /* Badge */
+    --badge_background: #1e1e1e5b;
+    --badge_border: #40404083;
+
+    /* Alert New */
+    --alert_new_color: #CDCCCC;
+    --alert_new_background: linear-gradient(97deg, rgba(143,53,214,1) 0%, rgba(75,63,92,0.3573880235688025) 75%);
+
+    /* Navbar */
+    --brand_color: #FFFFFF;
+    --active: #FFFFFF;
+    --navbar_button_background: #B28FE8;
+    --navbar_button_color: #222222;
+    --navbar_small: #181420;
+
+    /* Header */
+    --header_primary_button_background: #B28FE8;
+    --header_primary_button_color: #222222;
+
+    --header_secondary_button_background: #1e1e1e5b;
+    --header_secondary_button_border: #40404083;
+
+    /* Shop */
+    --border_toggle: #d4d4d40b;
+    --border_card: #d4d4d421;
+    --lines_bottom: linear-gradient(90deg,rgba(64, 64, 64, 0.337) 33%,hsla(0,0%,100%,0) 0);
+}
